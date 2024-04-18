@@ -4,3 +4,8 @@ flask
 scikit-learn
 seaborn
 datetime
+pyodbc
+fastapi
+uvicorn[standard]
+pydantic
+azure-identity

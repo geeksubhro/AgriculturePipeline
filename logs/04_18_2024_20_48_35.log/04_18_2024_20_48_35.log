@@ -1,0 +1,27 @@
+[2024-04-18 20:48:35,672] 21 root - INFO - Starting data ingestion
+[2024-04-18 20:48:36,045] 25 root - INFO - Dataset loaded successfully
+[2024-04-18 20:48:38,861] 67 root - INFO - Raw data saved to file
+[2024-04-18 20:48:40,395] 74 root - INFO - Train-test split completed
+[2024-04-18 20:48:40,403] 36 root - INFO - Data ingestion completed successfully
+[2024-04-18 20:48:40,759] 63 root - INFO - Read train and test data completed
+[2024-04-18 20:48:40,763] 64 root - INFO - Train Dataframe Head : 
+         State        District       Crop  Year  Season    Area Area Units  Production Production Units      Yield
+0  West Bengal  DINAJPUR UTTAR       Gram  2007    Rabi   361.0    Hectare       131.0           Tonnes   0.362881
+1       Odisha         NUAPADA  Sugarcane  1998  Winter    38.0    Hectare      1920.0           Tonnes  50.526316
+2        Assam       KOKRAJHAR     Masoor  2010    Rabi  1165.0    Hectare       564.0           Tonnes   0.484120
+3  Maharashtra        BULDHANA      Maize  2002    Rabi   500.0    Hectare       600.0           Tonnes   1.200000
+4  Maharashtra           AKOLA    Sesamum  2004  Kharif  2900.0    Hectare       400.0           Tonnes   0.137931
+[2024-04-18 20:48:40,765] 65 root - INFO - Test Dataframe Head  : 
+           State    District               Crop  Year  Season   Area Area Units  Production Production Units     Yield
+0  Uttar Pradesh   ALLAHABAD       Dry chillies  2009  Kharif   72.0    Hectare        64.0           Tonnes  0.888889
+1       Nagaland  MOKOKCHUNG  Moong(Green Gram)  2010  Kharif   20.0    Hectare        20.0           Tonnes  1.000000
+2          Bihar  KISHANGANJ         Horse-gram  2011  Kharif  565.0    Hectare       538.0           Tonnes  0.952212
+3    Maharashtra      NANDED      Other Cereals  1998  Kharif  100.0    Hectare       100.0           Tonnes  1.000000
+4  Uttar Pradesh   ALLAHABAD  Moong(Green Gram)  2012  Kharif    6.0    Hectare         3.0           Tonnes  0.500000
+[2024-04-18 20:48:40,765] 67 root - INFO - Obtaining preprocessing object
+[2024-04-18 20:48:40,765] 27 root - INFO - Data Transformation initiated
+[2024-04-18 20:48:40,765] 32 root - INFO - Pipeline Initiated
+[2024-04-18 20:48:40,765] 51 root - INFO - Pipeline Completed
+[2024-04-18 20:48:42,507] 91 root - INFO - Preprocessor pickle file saved
+[2024-04-18 20:48:42,518] 24 root - INFO - Segregating the dependent and independent variables
+[2024-04-18 20:48:42,722] 63 root - ERROR - Error occurred during model training
