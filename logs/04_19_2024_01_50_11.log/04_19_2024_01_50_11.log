@@ -1,0 +1,26 @@
+[2024-04-19 01:50:12,078] 21 root - INFO - Starting data ingestion
+[2024-04-19 01:50:12,202] 25 root - INFO - Dataset loaded successfully
+[2024-04-19 01:50:12,482] 67 root - INFO - Raw data saved to file
+[2024-04-19 01:50:12,705] 74 root - INFO - Train-test split completed
+[2024-04-19 01:50:12,705] 36 root - INFO - Data ingestion completed successfully
+[2024-04-19 01:50:12,768] 52 root - INFO - Read train and test data completed
+[2024-04-19 01:50:12,768] 53 root - INFO - Train Dataframe Head : 
+            State   District       Crop  Year      Season    Area Area Units  Production Production Units       Yield
+0          Kerala   THRISSUR  Sugarcane  2001  Whole Year     2.0    Hectare       200.0           Tonnes  100.000000
+1  Madhya Pradesh   BALAGHAT      Onion  2001  Whole Year   262.0    Hectare      5710.0           Tonnes   21.793893
+2       Karnataka     KODAGU    Tobacco  2003  Whole Year   305.0    Hectare       172.0           Tonnes    0.563934
+3  Madhya Pradesh      SATNA     Potato  2002  Whole Year  1521.0    Hectare     14258.0           Tonnes    9.374096
+4     Maharashtra  OSMANABAD      Maize  2002      Summer   100.0    Hectare       100.0           Tonnes    1.000000
+[2024-04-19 01:50:12,768] 54 root - INFO - Test Dataframe Head  : 
+            State      District    Crop  Year      Season     Area Area Units  Production Production Units      Yield
+0  Madhya Pradesh         DATIA    Gram  2003        Rabi  61143.0    Hectare     77075.0           Tonnes   1.260569
+1         Haryana  MAHENDRAGARH   Jowar  2001      Kharif     23.0    Hectare         0.0           Tonnes   0.000000
+2     Maharashtra         AKOLA   Onion  2003  Whole Year    385.0    Hectare      9180.0           Tonnes  23.844156
+3  Madhya Pradesh         SAGAR  Ginger  2002      Kharif    326.0    Hectare       261.0           Tonnes   0.800613
+4         Gujarat  BANAS KANTHA  Potato  2002  Whole Year  16500.0    Hectare    433100.0           Tonnes  26.248485
+[2024-04-19 01:50:12,768] 56 root - INFO - Obtaining preprocessing object
+[2024-04-19 01:50:12,768] 25 root - INFO - Data Transformation initiated
+[2024-04-19 01:50:12,768] 29 root - INFO - Pipeline Initiated
+[2024-04-19 01:50:12,768] 42 root - INFO - Pipeline Completed
+[2024-04-19 01:50:12,941] 82 root - INFO - Preprocessor pickle file saved
+[2024-04-19 01:50:12,941] 24 root - INFO - Segregating the dependent and independent variables

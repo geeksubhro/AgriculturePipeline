@@ -1,8 +1,10 @@
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
 from src.components.model_trainer import ModelTrainer
+from src.components.data_import import StartImport
 
 if __name__ == "__main__": 
+    StartImport()
     obj = DataIngestion()
     train_data_path, test_data_path = obj.initiate_data_ingestion()
     data_transformation = DataTransformation()

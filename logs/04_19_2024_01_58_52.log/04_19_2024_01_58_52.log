@@ -1,0 +1,26 @@
+[2024-04-19 01:58:53,698] 21 root - INFO - Starting data ingestion
+[2024-04-19 01:58:53,768] 25 root - INFO - Dataset loaded successfully
+[2024-04-19 01:58:54,392] 67 root - INFO - Raw data saved to file
+[2024-04-19 01:58:54,710] 74 root - INFO - Train-test split completed
+[2024-04-19 01:58:54,710] 36 root - INFO - Data ingestion completed successfully
+[2024-04-19 01:58:54,965] 52 root - INFO - Read train and test data completed
+[2024-04-19 01:58:54,977] 53 root - INFO - Train Dataframe Head : 
+         State     District               Crop  Year  Season     Area Area Units  Production Production Units     Yield
+0      Gujarat        PATAN              Bajra  2003  Kharif  83800.0    Hectare     78900.0           Tonnes  0.941527
+1  Maharashtra     AMRAVATI          Safflower  2002    Rabi   1900.0    Hectare      1000.0           Tonnes  0.526316
+2       Odisha   JHARSUGUDA              Wheat  2001    Rabi    416.0    Hectare       581.6           Tonnes  1.398077
+3   Tamil Nadu  THOOTHUKUDI          Groundnut  2001  Kharif   1782.0    Hectare      3260.0           Tonnes  1.829405
+4      Haryana      GURGAON  Moong(Green Gram)  2003  Kharif     47.0    Hectare         0.0           Tonnes  0.000000
+[2024-04-19 01:58:54,982] 54 root - INFO - Test Dataframe Head  : 
+              State    District                   Crop  Year  Season      Area Area Units  Production Production Units     Yield
+0    Andhra Pradesh   ANANTAPUR                   Ragi  2002    Rabi     417.0    Hectare       517.0           Tonnes  1.239808
+1             Assam  BONGAIGAON      Other Rabi pulses  2001    Rabi    4684.0    Hectare      2485.0           Tonnes  0.530529
+2  Himachal Pradesh       KULLU               Soyabean  2002  Kharif       5.0    Hectare         8.0           Tonnes  1.600000
+3       Maharashtra  GADCHIROLI                   Rice  2001  Kharif  142100.0    Hectare    163800.0           Tonnes  1.152709
+4  Himachal Pradesh     KINNAUR  Peas & beans (Pulses)  2002  Kharif     650.0    Hectare       306.0           Tonnes  0.470769
+[2024-04-19 01:58:54,982] 56 root - INFO - Obtaining preprocessing object
+[2024-04-19 01:58:54,982] 25 root - INFO - Data Transformation initiated
+[2024-04-19 01:58:54,982] 29 root - INFO - Pipeline Initiated
+[2024-04-19 01:58:54,982] 42 root - INFO - Pipeline Completed
+[2024-04-19 01:58:55,239] 82 root - INFO - Preprocessor pickle file saved
+[2024-04-19 01:58:55,242] 24 root - INFO - Segregating the dependent and independent variables

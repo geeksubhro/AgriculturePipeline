@@ -1,0 +1,5 @@
+[2024-04-19 00:41:17,403] 96 werkzeug - WARNING -  * Debugger is active!
+[2024-04-19 00:41:17,407] 96 werkzeug - INFO -  * Debugger PIN: 390-015-542
+[2024-04-19 00:42:50,602] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:42:50] "GET / HTTP/1.1" 200 -
+[2024-04-19 00:42:51,173] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:42:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-04-19 00:46:05,434] 96 werkzeug - INFO -  * Detected change in 'C:\\Users\\subhr\\Downloads\\DataScience\\AgriculturePipeline\\app.py', reloading

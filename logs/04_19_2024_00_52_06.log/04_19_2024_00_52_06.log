@@ -1,0 +1,8 @@
+[2024-04-19 00:52:08,619] 96 werkzeug - WARNING -  * Debugger is active!
+[2024-04-19 00:52:08,622] 96 werkzeug - INFO -  * Debugger PIN: 390-015-542
+[2024-04-19 00:52:09,054] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:52:09] "GET / HTTP/1.1" 200 -
+[2024-04-19 00:52:11,773] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:52:11] "GET / HTTP/1.1" 200 -
+[2024-04-19 00:52:13,484] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:52:13] "POST /get_districts HTTP/1.1" 200 -
+[2024-04-19 00:54:07,632] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:54:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-04-19 00:54:10,996] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:54:10] "POST /get_districts HTTP/1.1" 200 -
+[2024-04-19 00:54:12,123] 96 werkzeug - INFO - 127.0.0.1 - - [19/Apr/2024 00:54:12] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
