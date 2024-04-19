@@ -8,71 +8,170 @@
       /* Add your CSS styles here */
       body {
         font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
+        background-color: #000; /* Set the background color to black to match the particle canvas */
         margin: 0;
         padding: 0;
+        overflow: hidden; /* Add this line to prevent scrollbar */
+        user-select: none; /* Disable text selection */
       }
       .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        pointer-events: none; /* Ensure the particles don't interfere with form elements */
+      }
+      .content {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 20px;
         padding: 20px;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.7); /* Change the background color to white with 70% opacity */
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-top: 50px;
-      }
-      h1,
-      h2 {
-        text-align: center;
-        color: #333;
-      }
-      #result-container {
-        margin-top: 20px;
         text-align: center;
       }
+      
+      
     </style>
   </head>
   <body>
+    <div id="particles-js"></div>
+
     <div class="container">
-      <h1>Welcome to My</h1>
-      
+      <div class="content">
+        <h1>Welcome to My</h1>
+        
+        <!-- Include the form.html content here -->
+        {% include 'form.html' %}
 
-      <!-- Include the form.html content here -->
-      {% include 'form.html' %}
-
-      <!-- Container for displaying the result -->
-      <div id="result-container"></div>
+        <!-- Container for displaying the result -->
+        <div id="result-container"></div>
+      </div>
     </div>
 
-    <!-- Add jQuery library -->
-    
-
-    <!-- JavaScript for handling AJAX request -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-      // Function to submit form data and display result
-      function predictAndDisplayResult() {
-        $.ajax({
-          url: "/predict",
-          method: "POST",
-          data: $("form").serialize(), // Serialize form data
-          success: function (response) {
-            $("#result-container").html(response); // Update result container with response
-            // Scroll to the result
-            $("html, body").animate(
-              {
-                scrollTop: $("#result-container").offset().top,
-              },
-              1000
-            );
+      particlesJS('particles-js', {
+        particles: {
+          number: {
+            value: 175,
+            density: {
+              enable: true,
+              value_area: 800
+            }
           },
-        });
-      }
-
-      // Event listener for form submission
-      $("form").submit(function (event) {
-        event.preventDefault(); // Prevent default form submission
-        predictAndDisplayResult(); // Call function to predict and display result
+          color: {
+            value: '#ffffff' // Set the color to white
+          },
+          shape: {
+            type: 'circle',
+            stroke: {
+              width: 0,
+              color: '#000000'
+            },
+            polygon: {
+              nb_sides: 5
+            },
+            image: {
+              src: 'a.webp',
+              width: 100,
+              height: 100
+            }
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false
+            }
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false
+            }
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#ffffff', // Set the line color to white
+            opacity: 0.4,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: 'none',
+            random: false,
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200
+            }
+          }
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'repulse'
+            },
+            onclick: {
+              enable: true,
+              mode: 'push'
+            },
+            resize: true
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1
+              }
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3
+            },
+            repulse: {
+              distance: 20
+            },
+            push: {
+              particles_nb: 4
+            },
+            remove: {
+              particles_nb: 2
+            }
+          }
+        },
+        retina_detect: true
       });
+      
     </script>
+    <!-- Add jQuery library and JavaScript for handling AJAX request here -->
   </body>
 </html>
